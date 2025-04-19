@@ -14,3 +14,8 @@ The goal of this repository is to:
 ## 🚀 Language Used
 
 - **C++**
+
+## 🧠 Topics Covered (Coming Soon)
+
+I’ll be updating this section as I start learning and implementing each topic.
+
