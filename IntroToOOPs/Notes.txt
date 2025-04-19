@@ -1,0 +1,127 @@
+Object-Oriented Programming (OOP) is a programming paradigm (a style of writing code) based on the concept of objects which can contain data and code. The data is represented as fields (often called attributes or properties), and the code is represented as procedures (often called methods). Objects are instances of classes, which act as blueprints for creating objects.
+
+
+
+Difference between Procedural programming and Object Oriented programming:
+
+🔄 Procedural Programming (PP)
+Definition: Programming using procedures or routines (functions).
+Focus: On functions and the sequence of steps to be followed.
+Data Handling: Data is separate from functions.
+Example Languages: C, Pascal, Fortran.
+✅ Key Features:
+Code is organized as procedures/functions.
+Reusability is limited.
+Less secure – global data can be modified from anywhere.
+Harder to manage as code grows larger.
+
+🧱 Object-Oriented Programming (OOP)
+Definition: Programming using objects (which combine data and methods).
+Focus: On objects and classes that model real-world things.
+Data Handling: Data and methods are bundled together in objects.
+Example Languages: Java, C++, Python, C#.
+✅ Key Features:
+Uses classes and objects.
+Promotes encapsulation, inheritance, abstraction, and polymorphism.
+Easier to maintain and scale.
+Better for large, complex software systems.
+
+
+Use-Cases of Object Oriented Programming
+There are four major factors that make OOP significantly used in the real world. These are as follows:
+i) Modularity: The process of breaking down a complex problem into smaller, manageable, and reusable components (such as classes), enhancing code organization and maintainability.
+Example: a banking application with separate classes for Account, Customer, Transaction, etc.
+ii) Code Reusability: Refers to the ability to extend and reuse existing functionality, reducing the need to duplicate code and promoting maintainability.
+Example: Vehicle class extended by Car and Bike.
+iii) Scalability: Refers to the ability to effortlessly add new features or functionality without modifying existing code, ensuring the system can grow and adapt without disruption.
+iv) Security: Using OOP, users can protect sensitive data by encapsulating it within objects and exposing only the necessary functionality through controlled access methods, ensuring data integrity and security.
+Example: private balance in a Bank Account class.
+
+
+
+Why is OOP better for large-scale applications?
+OOP is ideal for large-scale applications because it promotes modularity, where complex systems are broken down into manageable components (classes and objects). It enhances code reusability through inheritance and polymorphism, making it easier to extend functionality without altering existing code.
+Additionally, OOP ensures scalability by allowing new features to be added with minimal disruption and provides security by encapsulating sensitive data within objects.
+These features make OOP well-suited for building and maintaining large, complex systems.
+
+
+
+
+Class
+In object-oriented programming, a Class is a blueprint or template for creating objects. It is the logical representation that defines a set of attributes (data) and methods (functions) that the objects created from the class will have. A class does not occupy memory on its own. It's essentially a definition or a structure from which individual objects are instantiated.
+Object
+An object is an instance of a class. When an object is created from a class, memory is allocated for it, and it holds the data as specified by the class. An object interacts with other parts of the program, and methods can be called and attributes accessed that belong to it.
+
+Keypoints:
+The class by itself doesn't take any memory. It is the object that takes up the memory once initialized.
+The two objects (obj1 and obj2) have separate memory allocated for them in the program though they have the same attributes and methods. Because of this reason, an object cannot access the attributes and methods of any other object and vice-versa.
+
+
+
+Attributes & Behaviours
+Attributes:
+Attributes (also called properties or fields) are the data or characteristics of an object. They represent the state of the object at any given moment. Attributes are typically defined within a class and can hold different types of information related to the object.
+Behaviours/ Methods:
+Behaviors (also called methods or functions) are the actions or operations that an object can perform. They define how the object interacts with its environment or other objects. Behaviors are implemented in methods and represent the functionality of the object.
+
+
+
+Memory Allocation in C++: Stack vs Heap
+1. Stack Memory (Automatic Storage)
+Stack memory is used for primitive data types, local variables, and objects created without new.
+Memory is automatically allocated and deallocated when the variable goes out of scope.
+Objects created this way are destroyed automatically when the function ends.
+2. Heap Memory (Dynamic Storage)
+Heap memory is used when you create objects using the new keyword.
+Memory remains allocated until it is manually freed using delete.
+If not deleted, it causes a memory leak (unlike Java, there’s no automatic garbage collection).
+
+In Short:
+Stack = short-term, fast, auto-managed.
+Heap = long-term, flexible, but you manage it.
+
+
+
+
+Important Points
+There are some important points that must be taken care of while implementing real-world entities using Object-oriented programming:
+Accessing Attributes: Use methods (getters and setters) to access private attributes. Example, getBalance() retrieves the current balance.
+Encapsulation: Keep attributes private and provide controlled access using public methods to ensure data integrity.
+Default Values: Attributes have default values if not explicitly initialized (e.g., 0 for numeric types, null for objects in Java).
+Method Parameters: Methods can take parameters to modify attributes (e.g., deposit(double amount)).
+Error Handling: Ensure methods validate inputs (e.g., disallow negative deposits or withdrawals exceeding balance).
+
+
+
+
+Constructor
+A constructor is a special method in a class designed to initialize an object when it is created. It ensures that the object is set up with the required attributes and state before it is used.
+
+Keypoints:
+Syntax: A constructor is a method that has the exact same name as the class and does not have a return type (not even void).
+A constructor is called when an object is created.
+If there is no constructor written for the given class, the language by-default triggers the default constructor
+
+Purpose of Constructor
+There are three major purposes behind creating a constructor for a class which are as follows:
+Object Initialization: Constructor helps in initializing an object at the time of creation by assigning it default or user-defined values to object attributes.
+Code Reusability: Everytime an object is created, the same code is reused preventing writing mulitple lines of codes to initialize different objects.
+Ensures Default Value: Ensures that the object is always started in a default state with default values when initiated.
+
+
+
+Types of constructors
+
+1. Default Constructor
+A constructor that takes no parameters.
+It is automatically called when an object is created without any arguments.
+If no constructor is defined, C++ provides a default constructor by default.
+
+2. Parameterized Constructor
+A constructor that accepts arguments to initialize an object with specific values when it is created.
+Allows passing values to the constructor at the time of object creation.
+
+3. Copy Constructor
+A constructor that creates a new object as a copy of an existing object.
+It is used when passing objects by value or returning objects by value.
+Takes a reference to an object of the same class as its parameter.
