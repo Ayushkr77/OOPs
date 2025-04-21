@@ -1,0 +1,12 @@
+In C++, the static keyword is used to indicate that a member belongs to the class rather than to any specific instance. It can be applied to variables, member functions, and also used inside functions or blocks. Static members are shared across all objects of a class and are initialized only once during the program lifecycle.
+
+
+Advantages of Static Members in C++
+Memory Efficiency
+Static variables are created only once and shared among all instances.
+
+Utility Functions
+Static functions can be used as helpers without needing objects.
+
+Preserve State
+Static variables inside functions maintain state across calls.
