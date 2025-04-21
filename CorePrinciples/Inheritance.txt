@@ -1,0 +1,32 @@
+Inheritance
+Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class (subclass) to inherit the attributes (fields) and behaviors (methods) of another class (superclass). It is the mechanism that promotes code reuse and establishes a hierarchical relationship between classes.
+
+Parent Class
+The parent class (also known as the superclass) is the class that provides common properties (attributes) and behaviors (methods) that are shared by one or more subclasses. It serves as a template or blueprint from which other classes (subclasses) can inherit.
+Subclass (Child Class)
+A subclass (also known as a child class) is a class that inherits from a parent class. The subclass can reuse, extend, or override the attributes and methods of the parent class to specialize or modify the inherited functionality.
+
+
+Types of Inheritance:
+Single Inheritance: One derived class inherits from one base class. In a single inheritance, a one-to-one relationship is established.
+Multilevel Inheritance: A class is derived from a class which is already derived from another class. In a multilevel inheritance, a one-to-one-to-one relationship across multiple levels is established.
+Multiple Inheritance: One derived class inherits from more than one base class.
+Hierarchical Inheritance: Multiple classes inherit from the same base class. In a hierarchical inheritance, a one-to-many relationship is established between classes.
+Hybrid Inheritance: A mix of two or more types of inheritance. Often needs virtual base classes to resolve ambiguity.
+
+
+
+Advantages of Using Inheritance
+Inheritance is a cornerstone of object-oriented programming, offering significant benefits such as:
+
+Reusability: It allows you to reuse the code of an existing class in a new class. Instead of rewriting code, the subclass (child class) can inherit the methods and attributes of the parent class. This reduces redundancy and promotes efficient coding.
+Modularity: It promotes a modular structure by separating concerns into different classes. Each class focuses on a specific part of the program, improving clarity and manageability.
+Extensibility: It enables adding new features or extending existing functionality without modifying the base class. This makes it easy to adapt to changing requirements.
+Maintainability: Inheritance makes code easier to maintain by centralizing common features in a parent class. Changes to shared functionality only need to be made in one place, reducing the risk of errors.
+
+
+
+
+Diamond Problem:
+Diamond Problem occurs when a class inherits from two classes that have methods with the same name. The compiler cannot determine which method to execute.
+To handle the Diamond Problem in C++, we use virtual inheritance.
