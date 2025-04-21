@@ -1,0 +1,43 @@
+Abstraction
+Abstraction is one of the fundamental concepts of Object-Oriented Programming (OOP). It is the process of hiding the implementation details and showing only the necessary features or interface to the user. In simpler terms, abstraction allows us to focus on what an object does, rather than how it does it.
+
+In C++, abstraction is achieved using:
+Abstract Classes
+Pure Virtual Functions
+
+
+
+Key Features of Abstraction in C++
+1. Hiding Implementation Details
+Abstraction hides complex logic and exposes a simple interface.
+Example: When driving a car, you don’t need to know how the engine works internally—you just use the accelerator, brakes, and steering.
+2. Abstract Classes
+An abstract class in C++ is a class that contains at least one pure virtual function. It cannot be instantiated directly.
+3. Pure Virtual Functions
+A pure virtual function is declared using the = 0 syntax. It has no body and must be overridden by any derived class.
+4. Concrete Methods
+An abstract class can have fully defined methods. These can be inherited and reused by subclasses or overridden if needed.
+
+
+
+Benefits of Abstraction
+Simplifies the System: Hides unnecessary implementation details.
+Improves Maintainability: Changes in internal logic don’t affect the rest of the code.
+Increases Reusability: Interfaces can be reused by different classes.
+Provides Security: Prevents direct access to internal implementations.
+
+
+Points to Remember:
+You cannot create objects of an abstract class.
+Abstract classes are used to provide a base blueprint for derived classes.
+Helps in achieving loose coupling and code flexibility.
+
+
+
+
+Feature | virtual Function | pure virtual Function
+Definition | Declared with the virtual keyword | Declared with = 0 at the end
+Purpose | Allows function to be overridden in derived class | Forces derived class to override it
+Object Creation | Can create objects of the class (if no pure virtual) | Cannot create objects of the class (abstract)
+Inheritance Behavior | Optional to override in derived class | Must be overridden in derived class
+Used in | Base classes (regular polymorphism) | Abstract base classes (interfaces/blueprints)
