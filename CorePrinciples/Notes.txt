@@ -11,3 +11,33 @@ Flexibility and Maintenance: If the internal implementation needs to change, enc
 Modular Code: Encapsulation promotes cleaner, modular code by bundling related data and behaviors together. It helps in organizing the code, making it more readable and maintainable.
 Improved Debugging and Testing: Since all access to an object's internal state is controlled, debugging and testing become easier. You can validate the behavior of methods (like getters and setters) independently.
 Reduced Complexity: By hiding complex internal implementations and exposing only what is necessary, encapsulation simplifies the usage of objects and reduces the chances of errors in using the class.
+
+
+
+
+
+
+
+Access Modifiers
+Access modifiers in object-oriented programming are keywords that define the visibility and accessibility of classes, methods, variables, and other members of a program. They determine which parts of the program can interact with a particular component, ensuring that code adheres to encapsulation — a key principle of object-oriented programming.
+Access modifiers provide a controlled interaction between objects and help enforce good design practices, making programs more reliable, scalable, and easy to debug.
+
+
+Purpose of Access Modifiers
+In object-oriented programming, the access modifiers play a key role and serve the following purposes:
+Encapsulation: Ensures sensitive data and methods are protected from unintended access.
+Controlled Access: Allows programmers to specify which parts of the program can interact with certain components.
+Modularity and Security: Helps in maintaining the integrity of data by restricting unwanted modifications.
+Flexibility: Provides mechanisms for controlled sharing of data between classes and packages.
+
+
+
+Types of Access Modifiers
+Public: Members are accessible from anywhere in the program (inside the class, outside the class, in other files if the class is accessible).
+Private: Members are accessible only within the class where they are declared.
+Protected: Members are accessible within the class and by derived (child) classes.
+
+
+Default Access in C++
+In class: The default access modifier is private.
+In struct: The default access modifier is public.
