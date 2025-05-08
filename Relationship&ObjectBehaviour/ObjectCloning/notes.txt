@@ -1,0 +1,32 @@
+Object Cloning
+Object cloning refers to creating an exact copy (or a near-identical copy) of an object. The cloned object has the same structure and data as the original but occupies a different memory location.
+
+Key characteristics:
+The cloned object is independent of the original object.
+Changes to the cloned object do not affect the original object (except in shallow cloning for reference types).
+
+
+Purpose behind usind Object Cloning
+Cloning is used for the following purposes:
+Efficiency: Instead of recreating and reinitializing an object from scratch, cloning allows the creation of a duplicate with minimal effort.
+Reducing Coupling: It ensures that changes to one object do not propagate unintentionally to another.
+Preserving State: Cloning helps preserve the current state of an object for tasks such as undo/redo operations or caching.
+Working with Immutable Objects: When you want to modify an object but cannot (e.g., immutable collections), cloning can create modifiable copies.
+Prototyping: In design patterns like the Prototype Pattern, cloning is frequently used to replicate objects.
+
+
+
+
+Types of Cloning
+Cloning in Java can be categorized into two types:
+Shallow Cloning: copies object's fields directly but if a field is a reference to another object, only the reference is copied. Copies primitive fields and references for objects. The cloned object shares the same reference for nested objects.
+Deep Cloning: Creates a completely independent copy of the original object, including copies of all nested objects.
+
+
+
+
+Shallow Cloning
+Definition: A shallow clone copies all member variables as-is, including pointers or references.
+Behavior: If the object contains pointers, the original and the clone will share the same memory addresses. Modifying the nested object through one will affect the other.
+Risk: Can lead to issues like double deletion or unintended data modification if not handled properly.
+
