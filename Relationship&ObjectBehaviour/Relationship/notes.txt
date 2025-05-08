@@ -24,3 +24,13 @@ Aggregation is a specialized form of association. It represents a "whole-part" r
 characteristics of Aggregation:
 Independence: The lifecycle of the "part" is not dependent on the "whole."
 Weaker Bond: The relationship is less tightly coupled compared to composition.
+
+
+
+
+Composition: Opposite of aggregation . A class owns another class. Strong relationship
+Composition is a stricter form of aggregation where the "whole" and "part" are tightly coupled. If the "whole" is destroyed, the "parts" are also destroyed. This represents a "part-of" relationship. For example, a House class might contain multiple Room objects. If the House is destroyed, the Room objects cease to exist.
+
+Characteristics of Composition
+Dependency: The lifecycle of the "part" is entirely dependent on the "whole."
+Stronger Bond: The relationship is tightly coupled.
