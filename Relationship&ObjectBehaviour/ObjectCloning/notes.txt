@@ -36,3 +36,21 @@ Definition: A deep clone creates a completely independent copy, including dynami
 Behavior: The clone will have its own copy of all fields, so changes in one object won't affect the other.
 Advantage: Safer and more reliable when dealing with dynamic memory.
 
+
+
+
+
+
+Shallow Cloning vs Deep Cloning
+
+/*
+| Aspect                          | Shallow Cloning                        | Deep Cloning                             |
+|--------------------------------|----------------------------------------|------------------------------------------|
+| Copies Primitive Fields        | Yes                                    | Yes                                      |
+| Copies Object References       | No (shares references)                 | Yes (creates separate objects)           |
+| Requires Overriding in Nested  | No                                     | Yes                                      |
+| Objects?                       |                                        |                                          |
+| Independent Nested Objects?    | No                                     | Yes                                      |
+| Use Case                       | When objects have only primitive fields| When objects have references to other    |
+|                                |                                        | mutable objects                          |
+*/
