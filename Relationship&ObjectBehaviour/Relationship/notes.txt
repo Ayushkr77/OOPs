@@ -18,7 +18,7 @@ Many-to-Many: Many instances of a class are associated with many instances of an
 
 
 
-Aggregation: a class can have another class within it but doesnt own it.
+Aggregation: a class can have another class within it but doesnt own it. Weak relationship
 Aggregation is a specialized form of association. It represents a "whole-part" relationship where the "whole" and "part" can exist independently. For example, a Department class may contain multiple Employee objects, but the employees can exist independently of the department. 
 
 characteristics of Aggregation:
