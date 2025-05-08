@@ -34,3 +34,24 @@ Composition is a stricter form of aggregation where the "whole" and "part" are t
 Characteristics of Composition
 Dependency: The lifecycle of the "part" is entirely dependent on the "whole."
 Stronger Bond: The relationship is tightly coupled.
+
+
+
+
+Multiple Types of Relationships
+In real-world systems, a class can participate in multiple types of relationships simultaneously. ''
+For example:
+A Library class can have an aggregation relationship with a Book class (books can exist without the library).
+The Book class can have a composition relationship with a Chapter class (chapters cease to exist if the book is destroyed).
+
+
+
+
+Comparison Table
+
+// Aspect               | Association                     | Aggregation                       | Composition
+// ------------------------------------------------------------------------------------------------
+// Relationship          | General                         | Weak                              | Strong
+// Ownership             | No ownership                    | One class contains another        | One class owns the other
+// Independence          | Classes can exist independently  | Contained class can exist independently | Contained class cannot exist independently
+// Real-world Example    | Teacher and Student             | Employee and Department           | Car and Engine
