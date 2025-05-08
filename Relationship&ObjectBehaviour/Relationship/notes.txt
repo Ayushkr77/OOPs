@@ -1,0 +1,26 @@
+Relationships Between Classes
+In object-oriented programming (OOP), classes are the foundational building blocks that define the structure and behavior of objects. One of the most important concepts in OOP is how these classes interact with each other. These interactions, or relationships, allow developers to model real-world systems effectively.
+
+Relationships between classes can be categorized into three major types:
+Association: A general relationship where one class interacts with another.
+Aggregation: A specialized form of association that represents a "has-a" relationship with a weaker bond.
+Composition: A more restrictive form of aggregation where the lifecycle of the related objects is tightly coupled.
+
+
+Association
+Association defines how two classes are connected. It represents a situation where objects of one class interact with objects of another through some form of linkage or reference. This interaction can manifest in various ways, depending on the context of the relationship.
+The connection can be one-to-one, one-to-many, or many-to-many, enabling different levels of collaboration and data sharing between the classes. Understanding this fundamental concept is key to designing systems that mirror real-world interactions.
+
+Types of Association
+One-to-One: One instance of a class is associated with exactly one instance of another class. For example, a Person class might have a one-to-one relationship with a Passport class.
+One-to-Many: One instance of a class is associated with multiple instances of another class. For instance, a Teacher class may be associated with multiple Student objects.
+Many-to-Many: Many instances of a class are associated with many instances of another class. For example, a Student class might be associated with multiple Course objects, and each Course object can have multiple Students.
+
+
+
+Aggregation: a class can have another class within it but doesnt own it.
+Aggregation is a specialized form of association. It represents a "whole-part" relationship where the "whole" and "part" can exist independently. For example, a Department class may contain multiple Employee objects, but the employees can exist independently of the department. 
+
+characteristics of Aggregation:
+Independence: The lifecycle of the "part" is not dependent on the "whole."
+Weaker Bond: The relationship is less tightly coupled compared to composition.
