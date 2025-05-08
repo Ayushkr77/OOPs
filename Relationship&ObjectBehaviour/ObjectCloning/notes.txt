@@ -30,3 +30,9 @@ Definition: A shallow clone copies all member variables as-is, including pointer
 Behavior: If the object contains pointers, the original and the clone will share the same memory addresses. Modifying the nested object through one will affect the other.
 Risk: Can lead to issues like double deletion or unintended data modification if not handled properly.
 
+
+Deep Cloning
+Definition: A deep clone creates a completely independent copy, including dynamically allocated memory or nested objects.
+Behavior: The clone will have its own copy of all fields, so changes in one object won't affect the other.
+Advantage: Safer and more reliable when dealing with dynamic memory.
+
