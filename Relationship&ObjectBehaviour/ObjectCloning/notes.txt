@@ -47,9 +47,7 @@ Shallow Cloning vs Deep Cloning
 | Aspect                          | Shallow Cloning                        | Deep Cloning                             |
 |--------------------------------|----------------------------------------|------------------------------------------|
 | Copies Primitive Fields        | Yes                                    | Yes                                      |
-| Copies Object References       | No (shares references)                 | Yes (creates separate objects)           |
-| Requires Overriding in Nested  | No                                     | Yes                                      |
-| Objects?                       |                                        |                                          |
+| Copies Object References       | No (shares references)                 | Yes (creates separate objects)           |                    |                                        |                                          |
 | Independent Nested Objects?    | No                                     | Yes                                      |
 | Use Case                       | When objects have only primitive fields| When objects have references to other    |
 |                                |                                        | mutable objects                          |
