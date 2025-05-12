@@ -1,0 +1,41 @@
+Object Lifecycle in C++
+
+Introduction
+In C++, the object lifecycle refers to the various stages an object goes through during its existence, from creation to destruction. Unlike Java, C++ provides manual memory management, which makes understanding the object lifecycle critical for ensuring proper resource management and avoiding issues like memory leaks, dangling pointers, and undefined behavior.
+An object in C++ typically follows this lifecycle: Creation → Usage → Destruction → Deallocation
+
+
+Stack Allocation Example:
+void example() {
+    MyClass obj;  // Object created on the stack
+}  // obj goes out of scope and is destroyed automatically.
+
+Heap Allocation Example:
+MyClass* obj = new MyClass();  // Object created on the heap
+
+
+
+
+Destruction:
+
+Automatic Destruction (Stack Objects): When an object goes out of scope, the destructor is automatically called to clean up any resources it owns. This is called automatic destruction and applies to objects on the stack.
+void example() {
+    MyClass obj;  // Object created on the stack
+}  // obj goes out of scope and its destructor is called automatically
+
+
+Manual Destruction (Heap Objects): For objects created on the heap, the delete operator must be called explicitly to free the allocated memory and call the destructor. Failing to do so leads to memory leaks.
+Example (Heap Object):
+MyClass* obj = new MyClass();  // Object created on the heap
+delete obj;  // Destructor called, memory is deallocated
+// No delete, causes memory leak
+
+
+
+
+
+Key Points to Remember:
+Stack Objects: Automatically created and destroyed when they go out of scope. Destructor is automatically called when the object goes out of scope.
+Heap Objects: Created using new and must be destroyed manually using delete to avoid memory leaks.
+Destructor: The destructor is automatically called when an object is destroyed (for stack objects) or when memory is deallocated (for heap objects). It is used to clean up resources.
+Memory Management: C++ requires manual memory management, meaning the programmer is responsible for allocating and deallocating memory to prevent memory leaks or dangling pointers.
