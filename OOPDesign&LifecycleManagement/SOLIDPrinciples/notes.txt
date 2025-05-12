@@ -1,0 +1,51 @@
+SOLID Principles in Object-Oriented Programming
+The SOLID principles are a set of five design guidelines introduced by Robert C. Martin to enhance the maintainability, scalability, and robustness of object-oriented software. These principles help developers create code that is more modular, flexible, and easier to understand.
+
+
+1. Single Responsibility Principle (SRP)
+Definition:
+A class should have only one reason to change, meaning it should have only a single responsibility.
+Explanation:
+This principle states that a class should focus on only one functionality. If a class is handling multiple responsibilities, it becomes difficult to maintain and update, leading to unintended side effects. By adhering to SRP, we ensure that changes in one part of the system do not affect unrelated functionalities.
+
+
+2. Open/Closed Principle (OCP)
+Definition:
+A class should be open for extension but closed for modification.
+Explanation:
+This means that we should be able to add new functionality to a class without modifying its existing code. This is achieved using abstraction and polymorphism (e.g., interfaces and inheritance).
+ In C++, this is typically implemented using abstract base classes (with virtual functions) and derived classes to extend behavior without touching the original code.
+
+
+
+3. Liskov Substitution Principle (LSP)
+Definition:
+Subtypes should be substitutable for their base types without altering the correctness of the program.
+Explanation:
+This principle ensures that derived classes extend base classes without changing their behavior. If a subclass changes how the base class behaves unexpectedly, it breaks the system.
+
+
+4. Interface Segregation Principle (ISP)
+Definition:
+A class should not be forced to implement interfaces it does not use.
+Explanation:
+Rather than having large, monolithic interfaces, we should have smaller, more specific ones. This prevents unnecessary method implementations in classes that don't need them.
+ In C++, this is achieved by designing abstract base classes (interfaces) with only the methods that are relevant to a particular group of derived classes. This avoids forcing subclasses to implement irrelevant methods.
+
+
+5. Dependency Inversion Principle (DIP)
+Definition:
+High-level modules should not depend on low-level modules. Both should depend on abstractions.
+Explanation:
+Instead of directly depending on concrete classes, we should depend on interfaces or abstract classes. This makes the system more flexible and decoupled.
+ In C++, this is achieved using abstract base classes (interfaces) and dependency injection (passing dependencies via constructors or functions). This allows easy replacement or extension of components without changing the high-level logic.
+
+
+
+Conclusion:
+The SOLID principles help in building scalable, maintainable, and flexible software.
+SRP ensures that classes have a single responsibility.
+OCP allows extending functionality without modifying existing code.
+LSP ensures that subclasses do not break the behavior of base classes.
+ISP prevents forcing classes to implement unnecessary methods.
+DIP promotes dependency on abstractions rather than concrete implementations.
