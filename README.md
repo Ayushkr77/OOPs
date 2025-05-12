@@ -15,7 +15,36 @@ The goal of this repository is to:
 
 - **C++**
 
-## 🧠 Topics Covered (Coming Soon)
+## 🧠 Topics Covered
 
-I’ll be updating this section as I start learning and implementing each topic.
+### 🔹 Introduction
+- Classes
+- Objects
+- Constructors
 
+### 🔹 Core Principles
+- Encapsulation  
+- Inheritance  
+- Abstraction  
+- Polymorphism  
+- Access Modifiers  
+- Method Overloading & Overriding  
+- Static Keyword  
+
+### 🔹 Relationship and Object Behaviour
+
+#### Relationship
+- Association  
+- Aggregation  
+- Composition  
+
+#### Object Cloning
+- Object Cloning  
+
+### 🔹 Advanced Concepts
+- Generics (Templates)  
+- File Handling  
+
+### 🔹 OOP Design and Lifecycle Management
+- Design Principles  
+- Object Lifecycle
