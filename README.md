@@ -46,5 +46,5 @@ The goal of this repository is to:
 - File Handling  
 
 ### 🔹 OOP Design and Lifecycle Management
-- Design Principles  
+- SOLID Principles  
 - Object Lifecycle
